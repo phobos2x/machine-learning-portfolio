@@ -9,6 +9,7 @@ This project builds an end-to-end machine learning pipeline to predict median ho
 - Model Building: Trained both a Linear Regression and a Random Forest Regressor.
 - Evaluation: Assessed models using Root Mean Squared Error (RMSE) on a test set and through 5-fold cross-validation.
 - Model Selection and Saving: Selected the Random Forest model based on superior performance and saved it using `joblib`.
+- *Note:* Model file not uploaded due to GitHub file size restrictions.
 
 ## Key Learnings
 
