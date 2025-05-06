@@ -8,7 +8,7 @@ from load_data import get_data
 from keras.models import load_model
 
 # Define the data directory path
-data_dir = r'C:\Users\Noor\PycharmProjects\CSFinalProject\Categories'
+data_dir = r'C:\Users\Noor\PycharmProjects\Categories'
 
 # Function to load the best trained model from a given file path
 def load_trained_model(model_path):
