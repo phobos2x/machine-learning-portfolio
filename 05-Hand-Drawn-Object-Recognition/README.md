@@ -42,3 +42,24 @@ It is inspired by Google's QuickDraw project, but users draw using their hand ge
 2. Install required Python packages:
    ```bash
    pip install tensorflow opencv-python mediapipe scikit-image matplotlib
+
+3. Ensure the following files/folders exist inside the project:
+   - `best_model.h5`
+   - `Header/` folder with icon images (already provided).
+
+4. Update the paths in `data_dir` inside `main.py` and `virtual_painter.py` (currently set to a local path).
+
+5. If you don't have the QuickDraw .npy files, you can download them from the Google QuickDraw Dataset:
+   - https://github.com/googlecreativelab/quickdraw-dataset
+
+6. To run the real-time application:
+   ```bash
+   python virtual_painter.py
+
+7. Use your hand to draw in the air. Press `p` to predict. Press `c` to clear canvas. Press `q` to quit.
+
+---
+
+## Notes
+- The trained model is already included (`best_model.h5`) and does not need retraining unless desired.
+- The virtual painter requires a working webcam.
