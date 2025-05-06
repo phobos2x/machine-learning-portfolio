@@ -1,29 +1,36 @@
 # Hand-Drawn Object Recognition with Real-Time Hand Tracking
 
-This project allows users to draw shapes or objects in the air using their hands, and the system predicts what was drawn using a trained Convolutional Neural Network (CNN).  
-It is inspired by Google's QuickDraw project, but users draw using their hand gestures detected via webcam.
+This project allows users to draw shapes or objects in the air using their hands, and the system predicts what was drawn using a trained Convolutional Neural Network (CNN).
+It is inspired by Google's QuickDraw project, but users draw using hand gestures detected via webcam.
 
 ---
 
 ## Project Features
+
 - Real-time hand tracking using MediaPipe and OpenCV.
 - Virtual drawing canvas controlled by finger movements.
-- CNN model trained on 6 object categories: `bird`, `cat`, `circle`, `house`, `square`, and `triangle`.
+- CNN model trained on 6 object categories: bird, cat, circle, house, square, and triangle.
 - Smart UI with brush, eraser, and color selection options.
 - Live prediction and score display after user drawing.
+- Data augmentation applied to increase training data diversity (rotation, flip, zoom, brightness changes).
 
 ---
 
 ## Technologies Used
+
 - Python
 - TensorFlow / Keras
 - OpenCV
 - MediaPipe
-- Scikit-image (for data augmentation)
+- Scikit-image
+- Scikit-learn
+- NLTK (for text stopwords removal, auxiliary)
+- Matplotlib
 
 ---
 
 ## Project Structure
+
 - `virtual_painter.py` — Main real-time drawing and prediction app.
 - `main.py` — Training script for CNN.
 - `hand_tracking_module.py` — Utility class for detecting hand landmarks.
@@ -37,11 +44,11 @@ It is inspired by Google's QuickDraw project, but users draw using their hand ge
 
 ## Setup Instructions
 
-1. Clone the repository and navigate to the `05-Hand-Drawn-Object-Recognition` folder.
+1. Clone the repository and navigate to the project folder.
 
 2. Install required Python packages:
    ```bash
-   pip install tensorflow opencv-python mediapipe scikit-image matplotlib
+   pip install tensorflow opencv-python mediapipe scikit-image scikit-learn matplotlib nltk
 
 3. Ensure the following files/folders exist inside the project:
    - `best_model.h5`
@@ -49,17 +56,22 @@ It is inspired by Google's QuickDraw project, but users draw using their hand ge
 
 4. Update the paths in `data_dir` inside `main.py` and `virtual_painter.py` (currently set to a local path).
 
-5. If you don't have the QuickDraw .npy files, you can download them from the Google QuickDraw Dataset:
+5. If you don't have the QuickDraw .npy files, you can download subsets from the Google QuickDraw Dataset:
    - https://github.com/googlecreativelab/quickdraw-dataset
 
 6. To run the real-time application:
    ```bash
    python virtual_painter.py
 
-7. Use your hand to draw in the air. Press `p` to predict. Press `c` to clear canvas. Press `q` to quit.
+7. Controls:
+   - Draw with your index finger.
+   - Select color/eraser with two fingers.
+   - Press `p` to predict, `c` to clear, `q` to quit.
 
 ---
 
 ## Notes
-- The trained model is already included (`best_model.h5`) and does not need retraining unless desired.
-- The virtual painter requires a working webcam.
+
+- The trained model (`best_model.h5`) is provided and does not require retraining unless desired.
+- A working webcam is required to run the virtual painter app.
+- This project used a subset of the QuickDraw dataset (6 categories) for faster and more focused training.
