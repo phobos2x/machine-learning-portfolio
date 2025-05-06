@@ -1,13 +1,14 @@
 # Machine Learning Portfolio
 
 Welcome to my Machine Learning project portfolio!  
-This repository contains a collection of machine learning projects focused on regression, classification, and natural language processing (NLP).
+This repository contains a collection of machine learning projects focused on regression, classification, natural language processing (NLP), and computer vision.
 
 Each project demonstrates my ability to perform:
 - Data cleaning and preprocessing
-- Feature engineering (e.g., TF-IDF, SMOTE)
-- Model building and evaluation (regression and classification)
-- Model saving for deployment
+- Feature engineering (e.g., TF-IDF, SMOTE, image augmentation)
+- Model building, evaluation, and optimization (regression, classification, CNNs)
+- Model saving and deployment preparation
+- Real-time computer vision applications using OpenCV and MediaPipe
 
 ---
 
@@ -24,11 +25,16 @@ Each project demonstrates my ability to perform:
 
 ### 3. Heart Failure Prediction
 - **Problem:** Predict death events based on clinical features.
-- **Techniques:** Classification (Logistic Regression, SVM, Decision Trees, Random Forest, XGBoost), SMOTE for imbalance handling, ROC-AUC evaluation.
+- **Techniques:** Classification (Logistic Regression, SVM, Decision Trees, Random Forest, XGBoost), ROC-AUC evaluation.
 
 ### 4. Spam Detector System
 - **Problem:** Classify SMS messages as spam or ham.
 - **Techniques:** NLP preprocessing, TF-IDF vectorization, multiple classifiers (Naive Bayes, Logistic Regression, Random Forest), ROC-AUC evaluation.
+
+### 5. Hand-Drawn Object Recognition with Real-Time Hand Tracking
+- **Problem:** Recognize hand-drawn objects in the air using a webcam and predict the object category.
+- **Techniques:** Real-time hand tracking (MediaPipe + OpenCV), CNN model for image classification, live prediction interface.
+- **Classes:** Bird, Cat, Circle, House, Square, Triangle.
 
 ---
 
@@ -36,4 +42,7 @@ Each project demonstrates my ability to perform:
 - Data Cleaning and Feature Engineering
 - Machine Learning Model Training and Evaluation
 - Text Processing (NLP)
+- Image Data Augmentation and Preprocessing
+- Computer Vision (OpenCV, MediaPipe)
+- CNN Model Development and Real-Time Inference
 - Model Saving and Deployment Preparation
