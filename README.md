@@ -7,7 +7,6 @@ Each project demonstrates my ability to perform:
 - Data cleaning and preprocessing
 - Feature engineering (e.g., TF-IDF, SMOTE)
 - Model building and evaluation (regression and classification)
-- Hyperparameter tuning (GridSearchCV, RandomizedSearchCV)
 - Model saving for deployment
 
 ---
@@ -36,6 +35,5 @@ Each project demonstrates my ability to perform:
 ## Skills Demonstrated
 - Data Cleaning and Feature Engineering
 - Machine Learning Model Training and Evaluation
-- Hyperparameter Tuning
 - Text Processing (NLP)
 - Model Saving and Deployment Preparation
