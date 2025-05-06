@@ -9,7 +9,7 @@ from keras.optimizers import Adam
 categories = ['bird', 'cat', 'circle', 'house', 'square', 'triangle']
 
 # Specify the directory where the data is located
-data_dir = r'C:\Users\Noor\PycharmProjects\CSFinalProject\Categories'
+data_dir = r'C:\Users\Noor\PycharmProjects\Categories'
 
 # Load and augment data for the given categories
 X, Y = get_data(categories, data_dir, augment=True)
@@ -27,5 +27,5 @@ model.compile(optimizer=Adam(), loss='categorical_crossentropy', metrics=['accur
 history = train_model(model, X_train, Y_train, X_test, Y_test)
 
 # Load the best performing model saved during training
-best_model_path = r'C:\Users\Noor\PycharmProjects\CSFinalProject\best_model.h5'
+best_model_path = r'C:\Users\Noor\PycharmProjects\best_model.h5'
 best_model = load_model(best_model_path)
