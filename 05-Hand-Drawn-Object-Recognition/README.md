@@ -24,7 +24,6 @@ It is inspired by Google's QuickDraw project, but users draw using hand gestures
 - MediaPipe
 - Scikit-image
 - Scikit-learn
-- NLTK (for text stopwords removal, auxiliary)
 - Matplotlib
 
 ---
@@ -48,7 +47,7 @@ It is inspired by Google's QuickDraw project, but users draw using hand gestures
 
 2. Install required Python packages:
    ```bash
-   pip install tensorflow opencv-python mediapipe scikit-image scikit-learn matplotlib nltk
+   pip install tensorflow opencv-python mediapipe scikit-image scikit-learn matplotlib
 
 3. Ensure the following files/folders exist inside the project:
    - `best_model.h5`
